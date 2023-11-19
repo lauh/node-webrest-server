@@ -8,7 +8,7 @@ import { Server } from './presentation/server';
 function main() {
   console.log('main');
   const server = new Server({
-    port: Number(envs.PORT),
+    port: envs.PORT,
     public_path: envs.PUBLIC_PATH
   });
   server.start();
